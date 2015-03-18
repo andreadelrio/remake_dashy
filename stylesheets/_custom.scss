@@ -1,0 +1,62 @@
+header {
+	padding: 14px;
+	position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  width: 100%;
+}
+
+a.logo {
+  font-size: 20px;
+  color: #ffffff;
+  float: left;
+  margin-right: 42px;
+}
+
+.notification-icon {
+	float: left;
+	margin: 0 7px;
+	border: 1px solid black;
+	border-radius: 20%;
+	padding: 3px 7px;
+	position: relative;
+	span {
+		font-size: 14px;
+		&.badge {
+			font-size: 12px;
+			position: absolute;
+		  left: 20px;
+		  top: -12px;
+			z-index: 100;
+			background-color: $brand-info;
+		}
+	}
+}
+
+#main-content {
+	margin-left: 210px;
+	.main-content-wrapper {
+		// float: right;
+		margin-top: 60px;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+#sidebar {
+	width: 210px;
+  height: 100%;
+  position: fixed;
+  background: #424a5d;
+}
+
+.site-footer {
+  background: $brand-info;
+  color: #fff;
+  padding: 10px 0;
+  float: right;
+  width: 100%;
+}

@@ -10,7 +10,7 @@ $margins-paddings: ("p": "padding", "m": "margin", "pt": "padding-top", "pb": "p
 }
 
 
-$colors: (info: $brand-info);
+$colors: (info: $brand-info, warning: $brand-warning);
 
 @each $color-name, $color-code in $colors {
 	.bg-#{$color-name}{
