@@ -1,0 +1,36 @@
+$margins-paddings: ("p": "padding", "m": "margin", "pt": "padding-top", "pb": "padding-bottom", "pl": "padding-left", "pr": "padding-right", "mt": "margin-top", "mb": "margin-bottom", "ml": "margin-left", "mr": "margin-right");
+
+@each $mp-class, $mp-property in $margins-paddings {
+	@for $h from 1 to 11 {
+	  .#{$mp-class}-#{$h*7} {
+	    #{$mp-property}: rem($h*7)!important;
+	    #{$mp-property}: ($h*7) + px !important;
+	  }
+	}
+}
+
+
+$colors: (info: $brand-info);
+
+@each $color-name, $color-code in $colors {
+	.bg-#{$color-name}{
+		background-color:$color-code;
+	}
+}
+
+.col-lg-2-4{
+  @include make-lg-column(2.4)
+}
+.col-md-2-4{
+  @include make-md-column(2.4)
+}
+.col-sm-2-4{
+  @include make-sm-column(2.4)
+}
+.col-xs-2-4{
+  @include make-xs-column(2.4)
+}
+
+.text-left {
+	text-align: left;
+}
