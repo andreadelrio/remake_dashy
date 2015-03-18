@@ -4344,6 +4344,9 @@ a.badge:hover, a.badge:focus {
 .text-left {
   text-align: left; }
 
+.text-center {
+  text-align: center; }
+
 header {
   padding: 14px;
   position: fixed;
@@ -4389,12 +4392,20 @@ a.logo {
   height: 100%;
   position: fixed;
   background: #424a5d; }
+  #sidebar ul.sidebar-menu {
+    list-style: none;
+    padding: 0; }
+    #sidebar ul.sidebar-menu li {
+      padding: 7px; }
+      #sidebar ul.sidebar-menu li a {
+        color: white;
+        text-decoration: none; }
+      #sidebar ul.sidebar-menu li:hover {
+        background-color: #68dff0; }
 
 .site-footer {
   background: #68dff0;
   color: #fff;
-  padding: 10px 0;
-  float: right;
-  width: 100%; }
+  padding: 10px 0; }
 
 /*# sourceMappingURL=main.css.map */
