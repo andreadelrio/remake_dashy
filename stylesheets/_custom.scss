@@ -1,20 +1,22 @@
+//HEADER
+
 header {
 	padding: 14px;
 	position: fixed;
-  left: 0;
   top: 0;
-  z-index: 1;
   height: 60px;
   width: 100%;
+  z-index: 1;
 }
 
+// header - logo
 a.logo {
   font-size: 20px;
   color: #ffffff;
   float: left;
   margin-right: 42px;
 }
-
+// header - notification icons
 .notification-icon {
 	float: left;
 	margin: 0 7px;
@@ -35,22 +37,12 @@ a.logo {
 	}
 }
 
-#main-content {
-	margin-left: 210px;
-	.main-content-wrapper {
-		// float: right;
-		margin-top: 60px;
-		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
-
+//SIDEBAR
 #sidebar {
 	width: 210px;
   height: 100%;
   position: fixed;
-  background: #424a5d;
+  background: $navy;
   ul.sidebar-menu {
   	list-style: none;
   	padding: 0;
@@ -66,11 +58,18 @@ a.logo {
   	}
   }
 }
-
+//SECTION
+#main-content {
+	margin-left: 210px;
+	.main-content-wrapper {
+		margin-top: 60px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+//FOOTER
 .site-footer {
   background: $brand-info;
   color: #fff;
   padding: 10px 0;
-  // float: right;
-  // width: 100%;
 }

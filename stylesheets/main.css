@@ -4350,11 +4350,10 @@ a.badge:hover, a.badge:focus {
 header {
   padding: 14px;
   position: fixed;
-  left: 0;
   top: 0;
-  z-index: 1;
   height: 60px;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
 
 a.logo {
   font-size: 20px;
@@ -4379,14 +4378,6 @@ a.logo {
       z-index: 100;
       background-color: #68dff0; }
 
-#main-content {
-  margin-left: 210px; }
-  #main-content .main-content-wrapper {
-    margin-top: 60px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px; }
-
 #sidebar {
   width: 210px;
   height: 100%;
@@ -4402,6 +4393,13 @@ a.logo {
         text-decoration: none; }
       #sidebar ul.sidebar-menu li:hover {
         background-color: #68dff0; }
+
+#main-content {
+  margin-left: 210px; }
+  #main-content .main-content-wrapper {
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px; }
 
 .site-footer {
   background: #68dff0;
